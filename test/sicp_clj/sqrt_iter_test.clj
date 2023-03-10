@@ -13,5 +13,5 @@
   (is (= true (subject/good-enough? -2 4))))
 
 (deftest sqrt-iter-test
-  (is (= 2.0 (subject/sqrt-iter 4)))
+  (is (= 2M (subject/sqrt-iter 4)))
   (is (thrown? java.lang.AssertionError (subject/sqrt-iter -2))))
